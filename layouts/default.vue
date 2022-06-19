@@ -70,7 +70,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'ICML 2022 Automated discovery of interpretable gravitational-wave population models'
     }
   }
 }
