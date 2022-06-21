@@ -28,8 +28,8 @@ export default {
       </p>
     </v-card-text>
     <img
-      class="vuetify-logo"
-      alt="Vuetify Logo"
+      class="pysr-logo"
+      alt="pysr Logo"
       :src="image"
     >
   </v-card>

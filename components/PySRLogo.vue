@@ -1,13 +1,13 @@
 <template>
   <img
-    class="vuetify-logo"
-    alt="Vuetify Logo"
-    src="/vuetify-logo.svg"
+    class="pysr-logo"
+    alt="pysr Logo"
+    src="/pysr_logo.svg"
   >
 </template>
 
 <style>
-.vuetify-logo {
+.pysr-logo {
   height: 180px;
   width: 180px;
   transform: rotateY(560deg);
