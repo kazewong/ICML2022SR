@@ -8,17 +8,13 @@
         <GifCard
           title="TL;DR"
           body="This is a simple Vue.js app that uses Vuetify to build a simple Gif Card."
-          image="/GWPopulation.gif"
+          image="/GW_population.mp4"
         />
-
-        <v-card-title class="headline">
-          Premise in gravitational wave
-        </v-card-title>
 
         <GifCard
           title="Premise in gravitational wave"
           body="This is a simple Vue.js app that uses Vuetify to build a simple Gif Card."
-          image="/PhenomenologicalModelling.gif"
+          image="/PhenomenologicalModelling.mp4"
         />
         <v-card-title class="headline">
           Symoblic regression
