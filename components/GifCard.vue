@@ -1,5 +1,10 @@
 <script>
 export default {
+  data () {
+    return {
+      show: false
+    }
+  },
   props: {
     title: {
       type: String,
@@ -30,11 +35,14 @@ export default {
         </video>
       </v-col>
       <v-col cols="0" sm="4">
-        <v-card-text>
-          <p>
-            {{ body }}
-          </p>
-        </v-card-text>
+        <button @click="show = !show">Toggle</button>
+        <v-slide-x-transition>
+          <v-card-text v-show="show">
+            <p>
+              {{ body }}
+            </p>
+          </v-card-text>
+        </v-slide-x-transition>
       </v-col>
     </v-row>
   </v-card>
@@ -47,5 +55,19 @@ export default {
   width: 100%;
   max-width: 600px;
   padding-left: 10px;
+}
+
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
 }
 </style>

@@ -10,8 +10,6 @@
 .pysr-logo {
   height: 180px;
   width: 180px;
-  transform: rotateY(560deg);
-  animation: turn 3.5s ease-out forwards 1s;
 }
 
 @keyframes turn {
