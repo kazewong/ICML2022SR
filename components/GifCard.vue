@@ -1,10 +1,5 @@
 <script>
 export default {
-  data () {
-    return {
-      show: false
-    }
-  },
   props: {
     title: {
       type: String,
@@ -17,6 +12,11 @@ export default {
     image: {
       type: String,
       default: 'Fill me in'
+    }
+  },
+  data () {
+    return {
+      show: false
     }
   }
 }
@@ -35,7 +35,9 @@ export default {
         </video>
       </v-col>
       <v-col cols="0" sm="4">
-        <button @click="show = !show">Toggle</button>
+        <button @click="show = !show">
+          Toggle
+        </button>
         <v-slide-x-transition>
           <v-card-text v-show="show">
             <p>
