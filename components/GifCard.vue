@@ -23,13 +23,13 @@ export default {
       {{ title }}
     </v-card-title>
     <v-row>
-      <v-col>
+      <v-col cols="12" sm="8">
         <video class="illustration" autoplay>
           <source :src="image" type="video/mp4">
 
         </video>
       </v-col>
-      <v-col>
+      <v-col cols="0" sm="4">
         <v-card-text>
           <p>
             {{ body }}
@@ -45,6 +45,7 @@ export default {
 .illustration {
   height: 100%;
   width: 100%;
+  max-width: 600px;
   padding-left: 10px;
 }
 </style>
